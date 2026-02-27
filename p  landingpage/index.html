@@ -1,0 +1,734 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Primus Honey — Pure Natural Honey | Nigeria</title>
+    <meta
+      name="description"
+      content="Nigeria's finest 100% raw, natural honey. No additives. Delivered to your door."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav-logo">🍯 Primushoney</div>
+      <ul class="nav-links">
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#benefits">Benefits</a></li>
+        <li><a href="#why">Why Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="cart-btn" onclick="openCart()">
+        🛒 Cart <span class="badge" id="cartBadge">0</span>
+      </button>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-text">
+        <div class="hero-badge">
+          🇳🇬 Made in Nigeria · 100% Raw · No Additives
+        </div>
+        <h1>
+          Nigeria's Purest<br /><em>Natural Honey,</em><br />Delivered Fresh.
+        </h1>
+        <p class="hero-sub">
+          Primus Honey is harvested from thriving Nigerian beehives — raw,
+          unfiltered, and loaded with real goodness. No sugar. No syrup. No
+          compromise. Just pure honey.
+        </p>
+        <div class="hero-btns">
+          <a href="#shop" class="btn-honey">🛍️ Shop Now</a>
+          <a href="#benefits" class="btn-outline">See Benefits</a>
+        </div>
+        <div class="hero-nums">
+          <div class="hero-num">
+            <strong>100%</strong><span>Pure Natural</span>
+          </div>
+          <div class="hero-num"><strong>5K+</strong><span>Customers</span></div>
+          <div class="hero-num">
+            <strong>2 Yrs</strong><span>Trusted Brand</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="bottle">
+          <img src="backimg.jpg" alt="Primus Honey Bottle" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg-white" id="shop">
+      <div class="sec-head c">
+        <span class="sec-label">Order Now</span>
+        <h2 class="sec-h">Choose Your Size</h2>
+        <p class="sec-d">
+          Pick how many bottles you want — the price updates live. We deliver
+          everywhere in Nigeria.
+        </p>
+      </div>
+
+      <div class="products-grid">
+        <div class="prod-card">
+          <div class="prod-img">
+            <img src="pimg2.jpg" alt="Primus Honey 350ml" />
+          </div>
+          <div class="prod-body">
+            <span class="prod-tag">350 ml</span>
+            <h3 class="prod-name">Primus Natural Honey</h3>
+            <p class="prod-desc">
+              Perfect for individuals and couples. Great for daily use, tea,
+              skin care, or gifting. Compact and easy to carry anywhere.
+            </p>
+            <div class="prod-price">₦6,000 <small>/ bottle</small></div>
+            <div class="qty-row">
+              <div class="qty-wrap">
+                <button class="q-btn" onclick="chQty('q350', -1)">−</button>
+                <span class="q-num" id="q350">1</span>
+                <button class="q-btn" onclick="chQty('q350', 1)">+</button>
+              </div>
+              <span class="q-sub">= <strong id="s350">₦6,000</strong></span>
+            </div>
+            <button
+              class="add-btn"
+              id="ab350"
+              onclick="
+                addToCart('Primus Honey', '350ml', 6000, 'q350', 'ab350')
+              "
+            >
+              🛒 Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <div class="prod-card">
+          <span class="prod-ribbon"></span>
+          <div class="prod-img">
+            <img src="pimg1.jpg" alt="Primus Honey 600ml" />
+          </div>
+          <div class="prod-body">
+            <span class="prod-tag">600 ml</span>
+            <h3 class="prod-name">Primus Natural Honey</h3>
+            <p class="prod-desc">
+              The family size. Ideal for homes, offices, and cooking. More
+              honey, better value — our most popular choice for Nigerian
+              families.
+            </p>
+            <div class="prod-price">₦8,000 <small>/ bottle</small></div>
+            <div class="qty-row">
+              <div class="qty-wrap">
+                <button class="q-btn" onclick="chQty('q600', -1)">−</button>
+                <span class="q-num" id="q600">1</span>
+                <button class="q-btn" onclick="chQty('q600', 1)">+</button>
+              </div>
+              <span class="q-sub">= <strong id="s600">₦8,000</strong></span>
+            </div>
+            <button
+              class="add-btn"
+              id="ab600"
+              onclick="
+                addToCart('Primus Honey', '600ml', 8000, 'q600', 'ab600')
+              "
+            >
+              🛒 Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ BENEFITS ══════════ -->
+
+    <section class="section bg-cream" id="benefits">
+      <div class="sec-head c">
+        <span class="sec-label">Why Honey?</span>
+        <h2 class="sec-h">What Primus Honey Does For You</h2>
+        <p class="sec-d">
+          Our customers don't just love the taste — they feel the real
+          difference every day.
+        </p>
+      </div>
+      <div class="benefits-grid">
+        <div class="ben">
+          <span class="ben-ico">🛡️</span>
+          <h3 class="ben-h">Boosts Immunity</h3>
+          <p class="ben-p">
+            Loaded with antioxidants and natural enzymes that strengthen your
+            immune system and help your body fight infections naturally.
+          </p>
+        </div>
+        <div class="ben">
+          <span class="ben-ico">⚡</span>
+          <h3 class="ben-h">Natural Energy</h3>
+          <p class="ben-p">
+            Forget sugary drinks. A spoonful of Primus before work or the gym
+            gives you clean, lasting energy with zero crash.
+          </p>
+        </div>
+        <div class="ben">
+          <span class="ben-ico">🫁</span>
+          <h3 class="ben-h">Soothes Cough</h3>
+          <p class="ben-p">
+            Warm water + Primus Honey + lemon = the best natural cough remedy.
+            Faster and safer than most syrups.
+          </p>
+        </div>
+        <div class="ben">
+          <span class="ben-ico">✨</span>
+          <h3 class="ben-h">Glowing Skin</h3>
+          <p class="ben-p">
+            Apply as a face mask or moisturiser. Its antibacterial properties
+            clear acne and lock in deep hydration.
+          </p>
+        </div>
+        <div class="ben">
+          <span class="ben-ico">🧠</span>
+          <h3 class="ben-h">Sharper Focus</h3>
+          <p class="ben-p">
+            Raw honey reduces brain oxidative stress. Start your morning with
+            honey water and notice better clarity and memory.
+          </p>
+        </div>
+        <div class="ben">
+          <span class="ben-ico">🫶</span>
+          <h3 class="ben-h">Happy Digestion</h3>
+          <p class="ben-p">
+            Honey feeds good gut bacteria, reduces bloating and indigestion.
+            Best taken on an empty stomach each morning.
+          </p>
+        </div>
+        <div class="ben">
+          <span class="ben-ico">❤️</span>
+          <h3 class="ben-h">Heart Health</h3>
+          <p class="ben-p">
+            Regular intake helps lower bad cholesterol, regulate blood pressure,
+            and reduce inflammation for a healthy heart.
+          </p>
+        </div>
+        <div class="ben">
+          <span class="ben-ico">😴</span>
+          <h3 class="ben-h">Better Sleep</h3>
+          <p class="ben-p">
+            One teaspoon before bed triggers melatonin release. Sleep deeper,
+            wake refreshed, and ditch the sleep aids.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg-dark" id="why">
+      <div class="why-grid">
+        <div>
+          <span class="sec-label inv">Why Primus?</span>
+          <h2 class="sec-h inv">We Don't Just Sell Honey. We Sell Trust.</h2>
+          <p class="sec-d inv">
+            Many Nigerian honey brands secretly mix with sugar syrup or glucose.
+            At Primus, we never do that — and here's why thousands trust us.
+          </p>
+          <div class="why-pts">
+            <div class="why-pt">
+              <span class="wp-ico">🐝</span>
+              <div>
+                <p class="wp-h">Real Nigerian Beehives</p>
+                <p class="wp-p">
+                  Our bees live freely in natural Nigerian forests — no
+                  chemicals, no pesticides. Thick, dark, fragrant honey exactly
+                  as nature made it.
+                </p>
+              </div>
+            </div>
+            <div class="why-pt">
+              <span class="wp-ico">🔬</span>
+              <div>
+                <p class="wp-h">Zero Additives, Zero Compromise</p>
+                <p class="wp-p">
+                  What's in the bottle is 100% honey. Nothing added, nothing
+                  removed. We stake our name on that promise every day.
+                </p>
+              </div>
+            </div>
+            <div class="why-pt">
+              <span class="wp-ico">🚚</span>
+              <div>
+                <p class="wp-h">Fast Nationwide Delivery</p>
+                <p class="wp-p">
+                  Lagos, Abuja, Port Harcourt, Kano, Ibadan and everywhere in
+                  Nigeria. Sealed, fresh, and on time.
+                </p>
+              </div>
+            </div>
+            <div class="why-pt">
+              <span class="wp-ico">💬</span>
+              <div>
+                <p class="wp-h">5,000+ Nigerians Already Switched</p>
+                <p class="wp-p">
+                  From nursing mums to gym lovers, students to executives —
+                  Primus is a daily ritual in thousands of Nigerian homes.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="why-tiles">
+          <div class="wtile full">
+            <div class="wt-n">100%</div>
+            <p class="wt-d">Raw & Unfiltered — No sugar added, ever</p>
+          </div>
+          <div class="wtile">
+            <div class="wt-n">5K+</div>
+            <p class="wt-d">Happy Customers</p>
+          </div>
+          <div class="wtile">
+            <div class="wt-n">2 Yrs</div>
+            <p class="wt-d">Serving Nigeria</p>
+          </div>
+          <div class="wtile full">
+            <div class="wt-n">🇳🇬</div>
+            <p class="wt-d">
+              Proudly Made in Nigeria — supporting local beekeepers
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ CONTACT ══════════ -->
+
+    <section class="section bg-white" id="contact">
+      <div class="sec-head c">
+        <span class="sec-label">Get in Touch</span>
+        <h2 class="sec-h">Contact Us</h2>
+        <p class="sec-d">
+          Have questions or want to place a bulk order? We're always here to
+          help.
+        </p>
+      </div>
+      <div
+        style="
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+          gap: 20px;
+          max-width: 860px;
+          margin: 0 auto;
+        "
+      >
+        <div
+          style="
+            background: var(--cream);
+            border: 1px solid rgba(232, 150, 14, 0.12);
+            border-radius: 18px;
+            padding: 26px 22px;
+            display: flex;
+            flex-direction: column;
+            gap: 9px;
+            transition: transform 0.26s;
+          "
+          onmouseover="this.style.transform = 'translateY(-4px)'"
+          onmouseout="this.style.transform = 'translateY(0)'"
+        >
+          <span style="font-size: 2rem">💬</span>
+          <span
+            style="
+              font-size: 0.7rem;
+              font-weight: 700;
+              letter-spacing: 1.8px;
+              text-transform: uppercase;
+              color: var(--t3);
+            "
+            >WhatsApp</span
+          >
+          <span style="font-weight: 700; color: var(--t1)"
+            >+234 807 712 5074</span
+          >
+          <a
+            href="https://wa.me/2348077125074"
+            style="
+              display: inline-flex;
+              align-items: center;
+              gap: 6px;
+              background: var(--dark);
+              color: #fff;
+              padding: 8px 16px;
+              border-radius: 999px;
+              font-size: 0.79rem;
+              font-weight: 600;
+              margin-top: 4px;
+              width: fit-content;
+              transition: background 0.26s;
+            "
+            onmouseover="this.style.background = 'var(--honey-dk)'"
+            onmouseout="this.style.background = 'var(--dark)'"
+            >💬 Chat Now</a
+          >
+        </div>
+        <div
+          style="
+            background: var(--cream);
+            border: 1px solid rgba(232, 150, 14, 0.12);
+            border-radius: 18px;
+            padding: 26px 22px;
+            display: flex;
+            flex-direction: column;
+            gap: 9px;
+            transition: transform 0.26s;
+          "
+          onmouseover="this.style.transform = 'translateY(-4px)'"
+          onmouseout="this.style.transform = 'translateY(0)'"
+        >
+          <span style="font-size: 2rem">📞</span>
+          <span
+            style="
+              font-size: 0.7rem;
+              font-weight: 700;
+              letter-spacing: 1.8px;
+              text-transform: uppercase;
+              color: var(--t3);
+            "
+            >Phone</span
+          >
+          <span style="font-weight: 700; color: var(--t1)"
+            >+234 807 712 5074</span
+          >
+          <a
+            href="tel:+2348077125074"
+            style="
+              display: inline-flex;
+              align-items: center;
+              gap: 6px;
+              background: var(--dark);
+              color: #fff;
+              padding: 8px 16px;
+              border-radius: 999px;
+              font-size: 0.79rem;
+              font-weight: 600;
+              margin-top: 4px;
+              width: fit-content;
+              transition: background 0.26s;
+            "
+            onmouseover="this.style.background = 'var(--honey-dk)'"
+            onmouseout="this.style.background = 'var(--dark)'"
+            >📞 Call Us</a
+          >
+        </div>
+        <div
+          style="
+            background: var(--cream);
+            border: 1px solid rgba(232, 150, 14, 0.12);
+            border-radius: 18px;
+            padding: 26px 22px;
+            display: flex;
+            flex-direction: column;
+            gap: 9px;
+            transition: transform 0.26s;
+          "
+          onmouseover="this.style.transform = 'translateY(-4px)'"
+          onmouseout="this.style.transform = 'translateY(0)'"
+        >
+          <span style="font-size: 2rem">📧</span>
+          <span
+            style="
+              font-size: 0.7rem;
+              font-weight: 700;
+              letter-spacing: 1.8px;
+              text-transform: uppercase;
+              color: var(--t3);
+            "
+            >Email</span
+          >
+          <span style="font-weight: 700; color: var(--t1)"
+            >@primusfarmandpurehoney@gmail.com</span
+          >
+          <a
+            href="mailto:hello@primusfarmandpurehoney@gmail.com"
+            style="
+              display: inline-flex;
+              align-items: center;
+              gap: 6px;
+              background: var(--dark);
+              color: #fff;
+              padding: 8px 16px;
+              border-radius: 999px;
+              font-size: 0.79rem;
+              font-weight: 600;
+              margin-top: 4px;
+              width: fit-content;
+              transition: background 0.26s;
+            "
+            onmouseover="this.style.background = 'var(--honey-dk)'"
+            onmouseout="this.style.background = 'var(--dark)'"
+            >📧 Send Mail</a
+          >
+        </div>
+        <div
+          style="
+            background: var(--cream);
+            border: 1px solid rgba(232, 150, 14, 0.12);
+            border-radius: 18px;
+            padding: 26px 22px;
+            display: flex;
+            flex-direction: column;
+            gap: 9px;
+            transition: transform 0.26s;
+          "
+          onmouseover="this.style.transform = 'translateY(-4px)'"
+          onmouseout="this.style.transform = 'translateY(0)'"
+        >
+          <span style="font-size: 2rem">📍</span>
+          <span
+            style="
+              font-size: 0.7rem;
+              font-weight: 700;
+              letter-spacing: 1.8px;
+              text-transform: uppercase;
+              color: var(--t3);
+            "
+            >Location</span
+          >
+          <span style="font-weight: 700; color: var(--t1)"
+            >Lagos, Nigeria 🇳🇬</span
+          >
+          <span style="font-size: 0.8rem; color: var(--t3)"
+            >Nationwide delivery available</span
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ CTA ══════════ -->
+
+    <section class="cta-band">
+      <h2>Ready to Taste Real Honey?</h2>
+      <p>
+        Join 5,000+ Nigerians who've made Primus Honey part of their daily
+        routine. Order now and get it delivered to your door.
+      </p>
+      <a href="#shop" class="btn-white">🛍️ Order Now</a>
+    </section>
+
+    <!-- ══════════ FOOTER ══════════ -->
+
+    <footer>
+      <div class="ft-grid">
+        <div class="ft-brand">
+          <div class="ft-logo">🍯 Primus <span>Honey</span></div>
+          <p>
+            Nigeria's most trusted natural honey brand. Harvested from real
+            Nigerian beehives and delivered fresh to your door. No additives. No
+            compromise.
+          </p>
+          <div class="ft-socials">
+            <a class="ft-soc" href="#" aria-label="Instagram">📸</a>
+            <a class="ft-soc" href="#" aria-label="WhatsApp">💬</a>
+            <a class="ft-soc" href="#" aria-label="Facebook">📘</a>
+            <a class="ft-soc" href="#" aria-label="TikTok">🎵</a>
+          </div>
+        </div>
+        <div class="ft-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#benefits">Benefits</a></li>
+            <li><a href="#why">Why Primus?</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="ft-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="https://wa.me/2348077125074">💬 WhatsApp</a></li>
+            <li><a href="tel:+2348077125074">📞 Call Us</a></li>
+            <li><a href="mailto:@primusfarmandpurehoney">📧 Email</a></li>
+            <li><a href="#">📍 Lagos, Nigeria</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="ft-bottom">
+        <p>© 2025 <span>Primus Honey Nigeria</span>. All rights reserved.</p>
+        <p>Made with ❤️ in <span>Nigeria 🇳🇬</span></p>
+      </div>
+    </footer>
+
+    <!-- ══════════ CART DRAWER ══════════ -->
+
+    <div class="cart-overlay" id="cartOverlay" onclick="closeCart()"></div>
+    <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart">
+      <div class="cd-head">
+        <h2>🛒 Your Cart</h2>
+        <button class="cd-close" onclick="closeCart()" aria-label="Close cart">
+          ✕
+        </button>
+      </div>
+      <div class="cd-body" id="cartBody">
+        <div class="cd-empty">
+          <span class="e-ico">🛒</span>
+          <p>Your cart is empty.<br />Add some honey to get started!</p>
+        </div>
+      </div>
+      <div class="cd-foot" id="cartFoot" style="display: none">
+        <div class="cd-row">
+          <span>Items in cart</span><span id="cartCount">0</span>
+        </div>
+        <div class="cd-total-row">
+          <span class="cd-total-lbl">Grand Total</span>
+          <span class="cd-total-val" id="cartTotal">₦0</span>
+        </div>
+        <button class="cd-checkout" onclick="doCheckout()">
+          ✅ Order via WhatsApp
+        </button>
+        <button class="cd-clear" onclick="clearCart()">🗑️ Clear Cart</button>
+      </div>
+    </aside>
+
+    <!-- TOAST -->
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <!-- ══════════ JS ══════════ -->
+
+    <script>
+      /* ── state ── */
+      let cart = [];
+
+      /* ── product page qty ── */
+      function chQty(id, d) {
+        const el = document.getElementById(id);
+        let v = parseInt(el.textContent) + d;
+        if (v < 1) v = 1;
+        el.textContent = v;
+        const price = id === "q350" ? 6000 : 8000;
+        const sid = id === "q350" ? "s350" : "s600";
+        document.getElementById(sid).textContent =
+          "₦" + (price * v).toLocaleString();
+      }
+
+      /* ── add to cart ── */
+      function addToCart(name, size, price, qId, btnId) {
+        const qty = parseInt(document.getElementById(qId).textContent);
+        const existing = cart.find((i) => i.size === size);
+        existing
+          ? (existing.qty += qty)
+          : cart.push({ name, size, price, qty });
+
+        renderCart();
+        openCart();
+        showToast("✅ " + qty + " × " + size + " added!");
+
+        /* button flash */
+        const btn = document.getElementById(btnId);
+        const orig = btn.innerHTML;
+        btn.innerHTML = "✅ Added!";
+        btn.classList.add("ok");
+        setTimeout(() => {
+          btn.innerHTML = orig;
+          btn.classList.remove("ok");
+        }, 1500);
+
+        /* reset qty */
+        document.getElementById(qId).textContent = "1";
+        const sid = qId === "q350" ? "s350" : "s600";
+        const base = qId === "q350" ? 6000 : 8000;
+        document.getElementById(sid).textContent = "₦" + base.toLocaleString();
+      }
+
+      /* ── render cart ── */
+      function renderCart() {
+        const body = document.getElementById("cartBody");
+        const foot = document.getElementById("cartFoot");
+        const badge = document.getElementById("cartBadge");
+        const count = document.getElementById("cartCount");
+        const total = document.getElementById("cartTotal");
+
+        const totalItems = cart.reduce((s, i) => s + i.qty, 0);
+        const totalPrice = cart.reduce((s, i) => s + i.price * i.qty, 0);
+
+        badge.textContent = totalItems;
+        count.textContent = totalItems;
+        total.textContent = "₦" + totalPrice.toLocaleString();
+
+        if (!cart.length) {
+          body.innerHTML = `<div class="cd-empty"><span class="e-ico">🛒</span><p>Your cart is empty.<br>Add some honey to get started!</p></div>`;
+          foot.style.display = "none";
+          return;
+        }
+
+        foot.style.display = "block";
+        body.innerHTML = cart
+          .map(
+            (item, idx) => `
+      <div class="cd-item">
+        <span class="cd-ico">🍯</span>
+        <div class="cd-info">
+          <p class="cd-name">${item.name}</p>
+          <p class="cd-size">${item.size} bottle</p>
+          <div class="cd-ctrls">
+            <button class="cd-qb" onclick="cartQty(${idx},-1)">−</button>
+            <span class="cd-qn">${item.qty}</span>
+            <button class="cd-qb" onclick="cartQty(${idx},1)">+</button>
+            <button class="cd-del" onclick="delItem(${idx})">🗑</button>
+          </div>
+        </div>
+        <span class="cd-price">₦${(item.price * item.qty).toLocaleString()}</span>
+      </div>
+    `,
+          )
+          .join("");
+      }
+
+      /* ── cart controls ── */
+      function cartQty(idx, d) {
+        cart[idx].qty += d;
+        if (cart[idx].qty <= 0) cart.splice(idx, 1);
+        renderCart();
+      }
+      function delItem(idx) {
+        cart.splice(idx, 1);
+        renderCart();
+        showToast("🗑️ Item removed");
+      }
+      function clearCart() {
+        cart = [];
+        renderCart();
+        showToast("🗑️ Cart cleared");
+      }
+
+      /* ── open / close ── */
+      function openCart() {
+        document.getElementById("cartDrawer").classList.add("open");
+        document.getElementById("cartOverlay").classList.add("open");
+        document.body.style.overflow = "hidden";
+      }
+      function closeCart() {
+        document.getElementById("cartDrawer").classList.remove("open");
+        document.getElementById("cartOverlay").classList.remove("open");
+        document.body.style.overflow = "";
+      }
+
+      /* ── whatsapp checkout ── */
+      function doCheckout() {
+        if (!cart.length) return;
+        const grand = cart.reduce((s, i) => s + i.price * i.qty, 0);
+        let msg = "Hello Primus Honey! 🍯 I want to place an order:\n\n";
+        cart.forEach(
+          (i) =>
+            (msg += `• ${i.qty} × ${i.size} Primus Honey — ₦${(i.price * i.qty).toLocaleString()}\n`),
+        );
+        msg += `\n💰 *TOTAL: ₦${grand.toLocaleString()}*\n\nPlease confirm my order. Thank you! 🙏`;
+
+        window.open(
+          "https://wa.me/2348077125074?text=" + encodeURIComponent(msg),
+          "_blank",
+        );
+      }
+
+      /* ── toast ── */
+      function showToast(msg) {
+        const t = document.getElementById("toast");
+        t.textContent = msg;
+        t.classList.add("on");
+        setTimeout(() => t.classList.remove("on"), 2800);
+      }
+    </script>
+  </body>
+</html>
